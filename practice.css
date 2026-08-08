@@ -922,6 +922,7 @@ footer p {
     padding: 48px 0;
 
   }
+  .hero-content,
   .why-container,
   .programm-content,
   .format-content,
@@ -1031,6 +1032,7 @@ footer p {
 
 
 @media (max-width:330px){
+  .hero-content,
   .why-container,
   .programm-content,
   .reviews-content,
