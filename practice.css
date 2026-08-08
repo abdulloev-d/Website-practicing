@@ -117,7 +117,7 @@ header{
   font-size: clamp(1.25rem, 3.4rem, 3.5rem);
 }
 .info-start{
-  width: 200px;
+  max-width: 200px;
   height: 28px;
   background-color: #DCEAE3;
   border-radius: 20px;
@@ -269,7 +269,7 @@ header{
 .demo-card{
   position: absolute;
   bottom: -90px;
-  right: -28px;
+  right: 0;
   width: 230px;
   display: flex;
   flex-direction: column;
@@ -833,6 +833,7 @@ footer p {
     padding: 48px 30px;
 }
 }
+
 @media (max-width:768px){
   .why-container,
   .programm-content,
@@ -899,11 +900,11 @@ footer p {
     padding: 0 20px;
   }
   .why-grid-container{
-  grid-template-columns: 1fr;
-  gap: 20px; 
-  padding: 0 20px; 
+    grid-template-columns: 1fr;
+    gap: 20px; 
+    padding: 0 20px; 
   }
-
+  
   .buttons {
     flex-direction: column;
     width: 100%;
@@ -913,8 +914,13 @@ footer p {
 
 
 @media (max-width: 480px){
+  header {
+    padding: 24px 16px;
+    
+  }
   .why{
-    width: 100%;
+    padding: 48px 0;
+
   }
   .why-container,
   .programm-content,
@@ -944,8 +950,8 @@ footer p {
   }
   .why-grid-container{
   grid-template-columns: 1fr;
-  gap: 20px; 
-  padding: 0 0; 
+  gap: 16px; 
+  padding: 0; 
   }
 
   .buttons {
@@ -957,11 +963,11 @@ footer p {
   line-height: 1.5;
 }
 .panel-container{
-  display:grid;
+  
   grid-template-columns: 1fr;
   align-items: start;
-  padding: 48px;  
-  gap: 20px;
+  padding: 24px 16px;  
+  gap: 16px;
 }
 .panel-text{
   display: flex;
@@ -1019,15 +1025,7 @@ footer p {
   flex-direction: column;
   gap: 20px;
 }
-@media (max-width: 480px) {
-  header {
-    padding: 24px 16px;
-    
-  }
 }
-}
-
-
 
 
 
@@ -1035,11 +1033,13 @@ footer p {
 @media (max-width:330px){
   .why-container,
   .programm-content,
-  .format-content,
   .reviews-content,
   .questions-content,
   .footer-content {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .format-content{
+    padding:24px ;
   }
 }
